@@ -3,8 +3,8 @@ title: 'Despre problemele sistemului wireless Canon RT'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Jun 30 2025'
 author: 'Voicu Andrei'
-heroImage: '../../assets/blog-placeholder-1.jpg'
-tags: ["canon","probleme"]
+heroImage: '../../assets/canon-rt.PNG'
+tags: ["canon","echipament"]
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.

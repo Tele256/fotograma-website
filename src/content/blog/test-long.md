@@ -3,7 +3,7 @@ title: 'De ce inca aleg sa folosesc Canon peste sistemele Sony si Nikon?'
 description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 pubDate: 'Jun 30 2025'
 author: 'Voicu Andrei'
-heroImage: '../../assets/blog-placeholder-1.jpg'
+heroImage: '../../assets/dc-aleg.PNG'
 tags: ["canon","sony","nikon"]
 ---
 
