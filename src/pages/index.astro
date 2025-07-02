@@ -12,6 +12,8 @@ import { Image } from 'astro:assets';
 const posts = (await getCollection('blog'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
   .slice(0, 3); // 👈 get only the latest 3
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <!DOCTYPE html>
@@ -24,7 +26,7 @@ const posts = (await getCollection('blog'))
 <body>
   <Header />
   	<div class="hero-banner">
-      <img src="/src/assets/testbanner.webp" alt="Hero Banner" />
+      <img src={`${base}/src/assets/testbanner.webp`} alt="Hero Banner" />
     </div>
   <main1>
     <div class="centerer">
@@ -76,13 +78,13 @@ const posts = (await getCollection('blog'))
         <h2><em>Editor’s pick</em></h2>
         <div class="pick-grid">
           <div class="pick-card">
-            <img src="/public/gallery/r7.jpg" alt="Editor’s pick 1" class="pick-img" />
+            <img src={`${base}/public/gallery/r7.jpg`} alt="Editor’s pick 1" class="pick-img" />
           </div>
           <div class="pick-card">
-            <img src="/public/gallery/Logo.png" alt="Editor’s pick 2" class="pick-img" />
+            <img src={`${base}/public/gallery/Logo.png`} alt="Editor’s pick 2" class="pick-img" />
           </div>
           <div class="pick-card">
-            <img src="/public/gallery/Voicu Andrei.jpg" alt="Editor’s pick 3" class="pick-img" />
+            <img src={`${base}/public/gallery/Voicu Andrei.jpg`} alt="Editor’s pick 3" class="pick-img" />
           </div>
         </div>
       </section>
