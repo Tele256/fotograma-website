@@ -39,7 +39,7 @@ const base = import.meta.env.BASE_URL;
 						{post.data.heroImage && (
 						<Image width={480} height={120} src={post.data.heroImage} alt="" />
 						)}
-						<h6>{post.data.title}</h6>
+						<h5>{post.data.title}</h5>
 						<p class="date">
 						<FormattedDate date={post.data.pubDate} />
 						</p>
@@ -74,15 +74,15 @@ const base = import.meta.env.BASE_URL;
       <section class="editors-pick">
         <h2><em>Editor’s pick</em></h2>
         <div class="pick-grid">
-          <div class="pick-card">
+          <a href={`${base}/gallery/r7.jpg`} class="pick-card">
             <img src={`${base}/gallery/r7.jpg`} alt="Editor’s pick 1" class="pick-img" />
-          </div>
-          <div class="pick-card">
+          </a>
+          <a href={`${base}/gallery/Logo.png`} class="pick-card">
             <img src={`${base}/gallery/Logo.png`} alt="Editor’s pick 2" class="pick-img" />
-          </div>
-          <div class="pick-card">
+          </a>
+          <a href={`${base}/gallery/VoicuAndrei.JPG`} class="pick-card">
             <img src={`${base}/gallery/VoicuAndrei.JPG`} alt="Editor’s pick 3" class="pick-img" />
-          </div>
+          </a>
         </div>
       </section>
     </div>

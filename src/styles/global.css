@@ -5,7 +5,7 @@
  */
 
 :root {
-	--accent: #1e5631;
+	--accent: #18551d;
 	--background: beige;
 	--pale-beige: rgb(114, 100, 83);
 	--accent-dark: #000d8a;
@@ -76,7 +76,7 @@ h4 {
 	/*font-size: 1.563em; old*/
 }
 h5 {
-	font-size: 1.25em;
+	font-size: 0.825em;
 }
 strong,
 b {
@@ -213,7 +213,7 @@ hr {
 	min-height: 180px;
 }
 
-.latest-articles-box h6 {
+.latest-articles-box h5 {
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
@@ -227,15 +227,24 @@ hr {
 
 .pick-img {
 	width: 100%;
-	max-height: 100px;
+	max-height: 150px;
 	object-fit: cover;
 	border-radius: 5px;
+}
+
+.pick-card{
+	height: 150px !important;
 }
 
 .logo-img{
 	height: 40px;
 	width: 220px;
 	content: url("/src/assets/Logo.png");
+}
+
+.logo-link{
+	border-bottom: 0px solid transparent !important;
+	padding: 5px !important;
 }
 
 @media (max-width: 720px) {
@@ -258,7 +267,6 @@ hr {
 
 	.pick-card{
 		max-height: 200px;
-		box-shadow: #000d8a 0px 0px 10px;
 	}
 
 	.pick-img{
