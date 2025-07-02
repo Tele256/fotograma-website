@@ -273,6 +273,15 @@ hr {
 		max-height: 200px;
 		object-fit: cover;
 	}
+
+	.tag-container{
+		justify-content: center;
+		margin-bottom: 0.5em;
+	}
+
+	ul li:first-child .tag-container .tag {
+		font-size: 0.8em;
+	}
 	
 }
 
@@ -288,4 +297,31 @@ hr {
 	max-width: 800px;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+.tag-container{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 0.2em;
+	margin-top: -0.5em; /* THIS AFFECTS ALL OF THE POSTS */
+	flex-wrap: wrap;
+	row-gap: 0.2em;
+}
+
+.tag{
+	background-color: var(--accent);
+	color: white;
+	padding: 0.002em 0.3em;
+	border-radius: 5px;
+	margin-right: 0.5em;
+	text-decoration: none;
+	font-size: 0.8em;
+}
+
+ul li:first-child .tag-container {
+	justify-content: center;
+}
+
+ul li:first-child .tag {
+	font-size: 1em;
 }
