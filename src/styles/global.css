@@ -234,12 +234,12 @@ hr {
 .logo-img{
 	height: 40px;
 	width: 220px;
-	content: url("../../src/assets/Logo.png");
+	content: url("/src/assets/Logo.png");
 }
 
 @media (max-width: 720px) {
 	.logo-img {
-		content: url("./src/assets/Logo-small.png");
+		content: url("/src/assets/Logo-small.png");
 		width: 40px;
 	}
 

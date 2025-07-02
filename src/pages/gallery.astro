@@ -20,6 +20,8 @@ const imageFiles = fs.readdirSync(galleryPath)
     };
   })
   .sort((a, b) => b.mtime.getTime() - a.mtime.getTime());
+
+  const base = import.meta.env.BASE_URL;
 ---
 
 <Layout
@@ -43,12 +45,12 @@ const imageFiles = fs.readdirSync(galleryPath)
 <section class="masonry-gallery">
   {imageFiles.map(({ file }) => (
     <a
-      href={`/gallery/${file}`}
+      href={`${base}/gallery/${file}`}
       target="_blank"
       rel="noopener noreferrer"
       class="image-item"
     >
-      <img src={`/gallery/${file}`} alt="Galerie Foto" loading="lazy" />
+      <img src={`${base}/gallery/${file}`} alt="Galerie Foto" loading="lazy" />
     </a>
   ))}
 </section>
