@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+import Footer from '../components/Footer.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+import AboutHeroImage from '../assets/gallery-banner.png';
+
+const galleryPath = './public/gallery';
+
+const imageFiles = fs.readdirSync(galleryPath)
+  .filter(file =>
+    ['.jpg', '.jpeg', '.png', '.webp', '.heic'].includes(path.extname(file).toLowerCase())
+  )
+  .map(file => {
+    const filePath = path.join(galleryPath, file);
+    const stats = fs.statSync(filePath);
+    return {
+      file,
+      mtime: stats.mtime // file's last modified time
+    };
+  })
+  .sort((a, b) => b.mtime.getTime() - a.mtime.getTime());
+---
+
+<Layout
+	title="Galeria Fotograma.ro"
+	description="Lorem ipsum dolor sit amet"
+	pubDate={new Date('July 01 2025')}
+	heroImage={AboutHeroImage}
+	showFooter={false}
+>
+	<p>
+		In aceasta sectiune a site-ului nostru, veti gasi o selectie de fotografii care surprind
+		frumusetea si diversitatea lumii in care traim. De la peisaje naturale uimitoare la
+		imagini din viata de zi cu zi, fiecare fotografie spune o poveste unica si ne invita sa
+		vedem lumea prin ochii artistului. Unele imagini apartin fotografilor din cadrul Fotograma.ro, 
+		altele apartin cititorilor nostri care ne-au trimis fotografii pentru a fi publicate.
+		Ne dorim ca aceasta galerie sa fie o sursa de inspiratie si bucurie pentru toti cei care o viziteaza.
+	</p>
+</Layout>
+
+<!-- Gallery Section -->
+<section class="masonry-gallery">
+  {imageFiles.map(({ file }) => (
+    <a
+      href={`/gallery/${file}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="image-item"
+    >
+      <img src={`/gallery/${file}`} alt="Galerie Foto" loading="lazy" />
+    </a>
+  ))}
+</section>
+
+<Footer />
+
+<style>
+.masonry-gallery {
+  column-count: 3;
+  column-gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.image-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 16px;
+  break-inside: avoid; /* Prevent images from breaking across columns */
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.image-item img:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 900px) {
+  .masonry-gallery {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 300px) {
+  .masonry-gallery {
+    column-count: 1;
+  }
+}
+</style>

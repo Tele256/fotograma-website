@@ -18,7 +18,7 @@ const posts = (await getCollection('blog')).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {
-				width: 960px;
+				width: 640px;
 			}
 			ul {
 				display: flex;
@@ -27,9 +27,10 @@ const posts = (await getCollection('blog')).sort(
 				list-style-type: none;
 				margin: 0;
 				padding: 0;
+				justify-content: center
 			}
 			ul li {
-				width: calc(50% - 1rem);
+				width: calc(50% - 8rem);
 			}
 			ul li * {
 				text-decoration: none;
@@ -60,7 +61,8 @@ const posts = (await getCollection('blog')).sort(
 			}
 			.date {
 				margin: 0;
-				color: rgb(var(--gray));
+				color: var(--pale-beige);
+				font-size: 0.775em;
 			}
 			ul li a:hover h4,
 			ul li a:hover .date {

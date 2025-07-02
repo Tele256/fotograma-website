@@ -1,0 +1,93 @@
+
+
+.main1 {
+  padding: 20px 15px;
+}
+
+.centerer {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.latest-articles h2,
+.editors-pick h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.article-grid {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.article {
+  background: #dddcd3;
+  padding: 10px;
+  width: 100%;
+  flex: 1;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.thumb {
+  background: #aaa;
+  height: 80px;
+  margin-bottom: 5px;
+}
+
+.article p {
+  font-size: 0.85rem;
+}
+
+.reviews-videos {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.reviews,
+.videos {
+  background: #ddddcc;
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.reviews h3,
+.videos h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.reviews ul li,
+.videos ul li {
+  background: #ccccbb;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.editors-pick .pick-grid {
+  display: flex;
+  gap: 15px;
+}
+
+.pick-card {
+  background: #ddddcc;
+  flex: 1;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.hero-banner img{
+  width: 100%;
+  height: auto;
+  z-index: 900;
+}
