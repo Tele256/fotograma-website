@@ -253,7 +253,7 @@ hr {
 		max-width: 40px;
 	}
 
-	.reviews-videos{
+	.reviews-news{
 		flex-direction: column;
 	}
 
@@ -383,6 +383,7 @@ ul li:last-child{
 	display: flex;
 	flex-direction: column;
 	margin: 0 0.2em;
+	align-items: flex-start;
 }
 
 .tag-title .tag-container{
@@ -402,8 +403,9 @@ ul li:last-child{
 	padding: 0.35em;
 }
 .news-card img{
-	min-width: 80px;
+	min-width: 70px;
 	max-width: 100px;
+	width: 10vw;
 	height: auto;
 	object-fit: cover;
 	border-radius: 5px;
