@@ -19,6 +19,11 @@ const reviewPosts = posts
   .filter(post => post.data.tags?.includes('review'))
   .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
   .slice(0, 5);
+
+const newsPosts = posts
+  .filter(post => (post.data.tags?.includes('stire') || post.data.tags?.includes('eveniment')) || (post.data.tags?.includes('stire') && post.data.tags?.includes('eveniment')))
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+  .slice(0, 5);
 ---
 
 <!DOCTYPE html>
@@ -56,7 +61,7 @@ const reviewPosts = posts
 		</div>
 		</section>
 
-      <section class="reviews-videos">
+      <section class="reviews-news">
         <div class="reviews">
           <h3>Review-urile noastre</h3>
           <div class="review-grid">
@@ -72,13 +77,27 @@ const reviewPosts = posts
             ))}
           </div>
         </div>
-        <div class="videos">
-          <h3>Videoclipuri populare</h3>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+        <div class="news">
+          <h3>Stiri si evenimente</h3>
+          <div class="news-grid">
+            {newsPosts.map(post => (
+              <a href={`${base}/blog/${post.id}`} class="news-link">
+              <article class="news-card">
+                {post.data.heroImage && (
+                  <Image width={480} height={120} src={post.data.heroImage} alt="" />
+                )}
+                <div class="tag-title">
+                  <div class="tag-container">
+                    {post.data.tags?.map(tag => (
+                      <a href={`${base}/tags/${tag.toLowerCase()}`} class="tag">{tag}</a>
+                    ))}
+                  </div>
+                  <h3>{post.data.title}</h3>
+                </div>
+              </article>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 

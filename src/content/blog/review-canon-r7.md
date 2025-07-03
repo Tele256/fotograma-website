@@ -5,7 +5,7 @@ pubDate: 'Jun 26, 2025'
 updatedDate: 'Jun 26 2025'
 author: 'Voicu Andrei'
 heroImage: '../../assets/r7-review.png'
-tags: ["review", "canon"]
+tags: ["review", "canon", "stire"]
 reviewTitle: 'Canon EOS R7'
 reviewImage: '../../assets/r7.png'
 ---

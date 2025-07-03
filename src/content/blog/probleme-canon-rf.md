@@ -4,7 +4,7 @@ description: 'Here is a sample of some basic Markdown syntax that can be used wh
 pubDate: 'Jun 30 2025'
 author: 'Voicu Andrei'
 heroImage: '../../assets/canon-rt.PNG'
-tags: ["canon","echipament","review"]
+tags: ["canon","review", "stire"]
 reviewTitle: 'Canon EOS R6 Mark II'
 reviewImage: '../../assets/r6m2.png'
 ---
