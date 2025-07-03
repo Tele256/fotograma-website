@@ -210,7 +210,7 @@ hr {
 	text-decoration: none;
 	display: flex;
 	flex-direction: column;
-	min-height: 180px;
+	min-height: 205px;
 }
 
 .latest-articles-box h5 {
@@ -282,7 +282,19 @@ hr {
 	ul li:first-child .tag-container .tag {
 		font-size: 0.8em;
 	}
+
+	ul li:last-child{
+		display: list-item !important;
+	}
+
+	.latest-articles-box li{
+	min-width: 120px;
+	}
 	
+	.latest-articles-box a{
+		min-height: 130px;
+		margin: -10px;
+	}
 }
 
 .reviews-videos {
@@ -331,6 +343,10 @@ ul li:first-child .tag-container {
 
 ul li:first-child .tag {
 	font-size: 1em;
+}
+
+ul li:last-child{
+	display: none;
 }
 
 .review-card{
