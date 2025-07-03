@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import Header from '../../components/Header.astro';
+import '../../styles/global.css';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+
+	// Collect all unique tags
+	const tags = new Set();
+	posts.forEach(post => {
+		post.data.tags?.forEach(tag => tags.add(tag.toLowerCase()));
+	});
+
+	return Array.from(tags).map(tag => ({
+		params: { tag },
+		props: { tag },
+	}));
+}
+
+const { tag } = Astro.props;
+const allPosts = await getCollection('blog');
+const taggedPosts = allPosts.filter(post =>
+	post.data.tags?.map((t: unknown) => String(t).toLowerCase()).includes(String(tag))
+);
+---
+<style>
+.centerer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0px;
+}
+</style>
+
+<Header />
+<div class="centerer">
+	<h2>Articole cu tagul "{tag}"</h2>
+	<ul>
+		{taggedPosts.map(post => (
+			<li>
+				<a href={`/blog/${post.id}`}>
+					{post.data.title}
+				</a>
+			</li>
+		))}
+	</ul>
+</div>

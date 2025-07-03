@@ -6,6 +6,8 @@ updatedDate: 'Jun 26 2025'
 author: 'Voicu Andrei'
 heroImage: '../../assets/r7-review.png'
 tags: ["review", "canon"]
+reviewTitle: 'Canon EOS R7'
+reviewImage: '../../assets/r7.png'
 ---
 
 Canon a lansat cea mai avansata camera foto mirrorless cu senzor crop, anume **EOS R7**, in vara anului 2022. Practic, acum 3 ani si 3 zile. A trecut ceva timp de atunci insa camera a ramas la fel de performanta ca in *day one*. Hai sa vedem impreuna ce poate sa faca acest *flagship* al lui Canon.

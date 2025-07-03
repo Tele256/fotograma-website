@@ -14,6 +14,11 @@ const posts = (await getCollection('blog'))
   .slice(0, 3); // get only the latest 3
 
 const base = import.meta.env.BASE_URL;
+
+const reviewPosts = posts
+  .filter(post => post.data.tags?.includes('review'))
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+  .slice(0, 5);
 ---
 
 <!DOCTYPE html>
@@ -54,12 +59,18 @@ const base = import.meta.env.BASE_URL;
       <section class="reviews-videos">
         <div class="reviews">
           <h3>Review-urile noastre</h3>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <div class="review-grid">
+            {reviewPosts.map(post => (
+              <a href={`${base}/blog/${post.id}`} class="review-link">
+              <article class="review-card">
+                {post.data.reviewImage && (
+                  <Image width={480} height={120} src={post.data.reviewImage} alt="" />
+                )}
+                <h3>{post.data.reviewTitle}</h3>
+              </article>
+              </a>
+            ))}
+          </div>
         </div>
         <div class="videos">
           <h3>Videoclipuri populare</h3>

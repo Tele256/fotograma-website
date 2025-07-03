@@ -318,10 +318,47 @@ hr {
 	font-size: 0.8em;
 }
 
+.tag:hover{
+	color: white;
+	background-color: #1c8425;
+	text-decoration: underline;
+
+}
+
 ul li:first-child .tag-container {
 	justify-content: center;
 }
 
 ul li:first-child .tag {
 	font-size: 1em;
+}
+
+.review-card{
+	background-color: #f2ebe0;
+	border-color: #666;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0.5em;
+	padding: 0.35em;
+}
+.review-card img{
+	width: 80px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 5px;
+	margin-right: 0.5em;
+}
+
+.review-card h3 {
+	font-size: 0.85em;
+	margin: 0;
+}
+
+.review-link {
+	text-decoration: none;
+	color: black
 }
