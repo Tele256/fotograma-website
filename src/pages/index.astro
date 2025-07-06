@@ -69,7 +69,7 @@ const newsPosts = posts
               <a href={`${base}/blog/${post.id}`} class="review-link">
               <article class="review-card">
                 {post.data.reviewImage && (
-                  <Image width={480} height={120} src={post.data.reviewImage} alt="" />
+                  <Image width={240} height={60} src={post.data.reviewImage} alt="" />
                 )}
                 <h3>{post.data.reviewTitle}</h3>
               </article>
@@ -81,21 +81,23 @@ const newsPosts = posts
           <h3>Stiri si evenimente</h3>
           <div class="news-grid">
             {newsPosts.map(post => (
-              <a href={`${base}/blog/${post.id}`} class="news-link">
               <article class="news-card">
-                {post.data.heroImage && (
-                  <Image width={480} height={120} src={post.data.heroImage} alt="" />
-                )}
+                <a href={`${base}/blog/${post.id}`} class="news-link">
+                  {post.data.heroImage && (
+                    <Image width={480} height={120} src={post.data.heroImage} alt="" />
+                  )}
+                </a>
                 <div class="tag-title">
                   <div class="tag-container">
                     {post.data.tags?.map(tag => (
                       <a href={`${base}/tags/${tag.toLowerCase()}`} class="tag">{tag}</a>
                     ))}
                   </div>
-                  <h3>{post.data.title}</h3>
+                  <a href={`${base}/blog/${post.id}`} class="news-link">
+                    <h3>{post.data.title}</h3>
+                  </a>
                 </div>
               </article>
-              </a>
             ))}
           </div>
         </div>
