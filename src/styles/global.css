@@ -6,8 +6,9 @@
 
 :root {
 	--accent: #1e5631;
+	--accent-light: #1c8425;
 	--background: rgb(243, 233, 208);
-	--pale-beige: rgb(114, 100, 83);
+	--card-darker: #e3d3be
 	--accent-dark: #000d8a;
 	--black: 15, 18, 25;
 	--gray: 96, 115, 159;
