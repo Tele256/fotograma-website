@@ -5,8 +5,8 @@
  */
 
 :root {
-	--accent: #18551d;
-	--background: beige;
+	--accent: #1e5631;
+	--background: rgb(243, 233, 208);
 	--pale-beige: rgb(114, 100, 83);
 	--accent-dark: #000d8a;
 	--black: 15, 18, 25;
@@ -203,7 +203,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 0px;
 }
 
 .latest-articles-box a{
@@ -234,6 +234,7 @@ hr {
 
 .pick-card{
 	height: 150px !important;
+	background-color: var(--background);
 }
 
 .logo-img{
@@ -293,7 +294,12 @@ hr {
 	
 	.latest-articles-box a{
 		min-height: 130px;
-		margin: -10px;
+	}
+
+	.section-cta {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
 	}
 }
 
@@ -428,4 +434,32 @@ ul li:last-child{
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 	line-clamp: 2;
+}
+
+.section-cta {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.cta{
+	background-color: var(--accent);
+	color: beige;
+	padding: 0.1em 0.2em;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.section-cta h2 {
+	margin: 0;
+}
+
+.section-cta a:hover {
+	background-color: #1c8425;
+	color: beige;
+	text-decoration: underline;
 }
