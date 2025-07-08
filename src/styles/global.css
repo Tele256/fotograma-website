@@ -478,3 +478,9 @@ ul li:last-child{
 	margin: 0 auto;
 	text-align: center;
 }
+
+.cta-revnew:hover {
+	background-color: #1c8425;
+	color: beige;
+	text-decoration: underline;
+}
