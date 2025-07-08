@@ -8,7 +8,9 @@ import { Image } from 'astro:assets';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, author, showFooter = true} = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, author, tags, showFooter = true} = Astro.props;
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <html lang="en">
@@ -52,6 +54,15 @@ const { title, description, pubDate, updatedDate, heroImage, author, showFooter 
 			.last-updated-on {
 				font-style: italic;
 			}
+			.tag-container {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5em;
+				justify-content: center;
+			}
+			.tag{
+				font-size: 1.25em;
+			}
 		</style>
 	</head>
 
@@ -77,6 +88,11 @@ const { title, description, pubDate, updatedDate, heroImage, author, showFooter 
 						</div>
 						<h3>{title}</h3>
 						<hr />
+							<div class="tag-container">
+								{tags?.map(tag => (
+								<a href={`${base}/tags/${tag.toLowerCase()}`} class="tag">{tag}</a>
+								))}
+							</div>
 					</div>
 					<slot />
 				</div>

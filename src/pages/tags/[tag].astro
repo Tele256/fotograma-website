@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
 import '../../styles/global.css';
 import { Image } from 'astro:assets';
 
@@ -37,8 +38,16 @@ const taggedPosts = allPosts.filter(post => {
 
 const base = import.meta.env.BASE_URL;
 ---
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{tag} - Fotograma.ro</title>
 
 <style>
+
+
 .centerer {
 	display: flex;
 	flex-direction: column;
@@ -95,7 +104,8 @@ const base = import.meta.env.BASE_URL;
 
 }
 </style>
-
+</head>
+<body>
 <Header />
 <div class="centerer">
 	<h2>Articole cu tagul "{tag}"</h2>
@@ -118,3 +128,6 @@ const base = import.meta.env.BASE_URL;
 		))}
 	</div>
 </div>
+<Footer />
+</body>
+</html>
