@@ -502,3 +502,13 @@ ul li:last-child{
 	padding: 10px;
 	border-radius: 10px;
 }
+
+.post-grid li:hover img{
+	box-shadow: var(--box-shadow);
+	transition: box-shadow 0.2s ease-in-out;
+}
+
+.post-grid li:hover h5{
+	color: var(--accent);
+	transition: color 0.2s ease-in-out;
+}
