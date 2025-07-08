@@ -14,7 +14,8 @@ const taggedPosts = allPosts.filter(post => {
 	const tagList = Array.isArray(rawTags) ? rawTags : [rawTags];
 
 	return tagList.some(t => String(t).toLowerCase() === 'review');
-});
+})
+.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 
 const base = import.meta.env.BASE_URL;
 ---

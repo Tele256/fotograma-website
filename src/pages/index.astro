@@ -65,53 +65,55 @@ const newsPosts = posts
 		</section>
 
       <section class="reviews-news">
-        <div class="reviews">
-          <h3>Review-urile noastre</h3>
-          <div class="review-grid">
-            {reviewPosts.map(post => (
-              <a href={`${base}/blog/${post.id}`} class="review-link">
-              <article class="review-card">
-                {post.data.reviewImage && (
-                  <Image width={240} height={60} src={post.data.reviewImage} alt="" />
-                )}
-                <h3>{post.data.reviewTitle}</h3>
-              </article>
-              </a>
-            ))}
-          </div>
-        </div>
-        <div class="news">
-          <h3>Stiri si evenimente</h3>
-          <div class="news-grid">
-            {newsPosts.map(post => (
-              <article class="news-card">
-                <a href={`${base}/blog/${post.id}`} class="news-link">
-                  {post.data.heroImage && (
-                    <Image width={480} height={120} src={post.data.heroImage} alt="" />
+        <div class="revnew-container">
+          <div class="reviews">
+            <h3>Review-urile noastre</h3>
+            <div class="review-grid">
+              {reviewPosts.map(post => (
+                <a href={`${base}/blog/${post.id}`} class="review-link">
+                <article class="review-card">
+                  {post.data.reviewImage && (
+                    <Image width={240} height={60} src={post.data.reviewImage} alt="" />
                   )}
+                  <h3>{post.data.reviewTitle}</h3>
+                </article>
                 </a>
-                <div class="tag-title">
-                  <div class="tag-container">
-                    {post.data.tags?.map(tag => (
-                      <a href={`${base}/tags/${tag.toLowerCase()}`} class="tag">{tag}</a>
-                    ))}
-                  </div>
-                  <a href={`${base}/blog/${post.id}`} class="news-link">
-                    <h3>{post.data.title}</h3>
-                  </a>
-                </div>
-              </article>
-            ))}
+              ))}
+            </div>
+          </div>
+          <div class="revnew-cta-box">
+            <a class="cta-revnew" href={`${base}/review`}>Vezi toate review-urile</a>
           </div>
         </div>
-      </section>
-      <section class="reviews-news" style="margin-top: -10px;">
-        <div class="reviews">
-          <a class="cta-revnew" href={`${base}/review`}>Vezi toate review-urile</a>
+        <div class="revnew-container">
+          <div class="news">
+            <h3>Stiri si evenimente</h3>
+            <div class="news-grid">
+              {newsPosts.map(post => (
+                <article class="news-card">
+                  <a href={`${base}/blog/${post.id}`} class="news-link">
+                    {post.data.heroImage && (
+                      <Image width={480} height={120} src={post.data.heroImage} alt="" />
+                    )}
+                  </a>
+                  <div class="tag-title">
+                    <div class="tag-container">
+                      {post.data.tags?.map(tag => (
+                        <a href={`${base}/tags/${tag.toLowerCase()}`} class="tag">{tag}</a>
+                      ))}
+                    </div>
+                    <a href={`${base}/blog/${post.id}`} class="news-link">
+                      <h3>{post.data.title}</h3>
+                    </a>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+          <div class="revnew-cta-box">
+            <a class="cta-revnew" href={`${base}/tags/stire`}>Vezi toate stirile</a>
+          </div>
         </div>
-        <div class="news">
-          <a class="cta-revnew" href={`${base}/tags/stire`}>Vezi toate stirile</a>
-        </div>  
       </section>
 
       <section class="editors-pick">

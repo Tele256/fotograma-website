@@ -50,7 +50,6 @@
 .reviews,
 .news {
   background: #e3d3be;
-  flex: 1;
   padding: 10px;
   border-radius: 10px;
 }
