@@ -3,6 +3,25 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 const base = import.meta.env.BASE_URL;
 ---
+<head>
+	<!-- Google Tag Manager -->
+  <script>
+    (function(w: any, d: Document, s: string, l: string, i: string) {
+      (w[l] = w[l] || []);
+      (w[l] as any).push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+      const f = d.getElementsByTagName(s)[0];
+      const j = d.createElement(s) as HTMLScriptElement;
+      const dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      if (f && f.parentNode) {
+        f.parentNode.insertBefore(j, f);
+      }
+    })(window, document, 'script', 'dataLayer', 'GTM-N8M4LXLS');
+  </script>
+<!-- End Google Tag Manager -->
+
+</head>
 
 <header>
 	<nav>
