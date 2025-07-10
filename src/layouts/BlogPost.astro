@@ -16,6 +16,8 @@ const base = import.meta.env.BASE_URL;
 <html lang="en">
 	<head>
 		<BaseHead title={title} description={description} />
+		<meta property="og:image" content={heroImage?.src ?? ''} />
+		<meta property="og:type" content="article" />
 		<style>
 			main {
 				width: calc(100% - 2em);
