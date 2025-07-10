@@ -275,6 +275,8 @@ hr {
 .logo-link{
 	border-bottom: 0px solid transparent !important;
 	padding: 5px !important;
+	display: flex;
+	align-items: center;
 }
 
 @media (max-width: 720px) {
