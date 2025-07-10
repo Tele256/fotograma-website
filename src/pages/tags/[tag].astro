@@ -60,6 +60,10 @@ const base = import.meta.env.BASE_URL;
 	padding: 0px;
 }
 
+h3 {
+	margin: 1em 0;
+}
+
 .tagged-posts-container {
 	display: flex;
 	flex-direction: column;
@@ -117,7 +121,7 @@ const base = import.meta.env.BASE_URL;
 	<!-- End Google Tag Manager (noscript) -->
 <Header />
 <div class="centerer">
-	<h2>Articole cu tagul "{tag}"</h2>
+	<h3>Articole cu tagul "{tag}"</h3>
 	<div class="tagged-posts-container">
 		{taggedPosts.map(post => (
 			<a href={`${base}/blog/${post.id}`} class="tagged-post">

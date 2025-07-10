@@ -85,3 +85,10 @@
   height: auto;
   z-index: 900;
 }
+
+@media (max-width: 390px) {
+  .latest-articles h2,
+  .editors-pick h2 {
+    font-size: 1rem;
+  }
+}
