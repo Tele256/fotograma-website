@@ -5,6 +5,7 @@ const base = import.meta.env.BASE_URL;
 ---
 <head>
 	<!-- Google Tag Manager -->
+	{import.meta.env.MODE === "production" && (
   <script>
     (function(w: any, d: Document, s: string, l: string, i: string) {
       (w[l] = w[l] || []);
@@ -18,7 +19,7 @@ const base = import.meta.env.BASE_URL;
         f.parentNode.insertBefore(j, f);
       }
     })(window, document, 'script', 'dataLayer', 'GTM-N8M4LXLS');
-  </script>
+  </script>)}
 <!-- End Google Tag Manager -->
 
 </head>
