@@ -124,7 +124,7 @@ h3 {
 	<h3>Articole cu tagul "{tag}"</h3>
 	<div class="tagged-posts-container">
 		{taggedPosts.map(post => (
-			<a href={`${base}/blog/${post.id}`} class="tagged-post">
+			<a href={`/blog/${post.id}`} class="tagged-post">
 				{post.data.heroImage && (
 					<Image
 						width={480}

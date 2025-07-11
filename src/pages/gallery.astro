@@ -48,12 +48,12 @@ const imageFiles = fs.readdirSync(galleryPath)
 <section class="masonry-gallery">
   {imageFiles.map(({ file }) => (
     <a
-      href={`${base}/gallery/${file}`}
+      href={`/gallery/${file}`}
       target="_blank"
       rel="noopener noreferrer"
       class="image-item"
     >
-      <img src={`${base}/gallery/${file}`} alt="Galerie Foto" loading="lazy" />
+      <img src={`/gallery/${file}`} alt="Galerie Foto" loading="lazy" />
     </a>
   ))}
 </section>

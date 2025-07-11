@@ -96,7 +96,7 @@ const base = import.meta.env.BASE_URL;
 	<h2>Review-urile noastre</h2>
 	<div class="tagged-posts-container">
 		{taggedPosts.map(post => (
-			<a href={`${base}/blog/${post.id}`} class="tagged-post">
+			<a href={`/blog/${post.id}`} class="tagged-post">
 				{post.data.reviewImage && (
 					<Image
 						width={480}
