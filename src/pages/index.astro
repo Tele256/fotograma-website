@@ -28,7 +28,7 @@ const newsPosts = posts
   .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
   .slice(0, 5);
 
-const siteImage = new URL('../../assets/Logo-small.png', import.meta.url);
+const siteImage = new URL('/src/assets/Logo-small.png', import.meta.url);
 ---
 
 <!DOCTYPE html>
