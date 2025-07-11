@@ -52,14 +52,14 @@ const siteImage = new URL('../../assets/Logo-small.png', import.meta.url);
 	  <section class="latest-articles">
     <div class="section-cta">
 		  <h2>Cele mai noi articole</h2>
-      <a class="cta" href={`${base}/blog`}>Mai multe</a>
+      <a class="cta" href={`/blog`}>Mai multe</a>
     </div>
 		<div class="latest-articles-box">		
 			<ul class="post-grid">
 				{
 				posts.map((post) => (
 					<li>
-						<a href={`${base}/blog/${post.id}`}>
+						<a href={`/blog/${post.id}`}>
 						{post.data.heroImage && (
 						<Image width={480} height={120} src={post.data.heroImage} alt="" />
 						)}
@@ -81,7 +81,7 @@ const siteImage = new URL('../../assets/Logo-small.png', import.meta.url);
             <h3>Review-urile noastre</h3>
             <div class="review-grid">
               {reviewPosts.map(post => (
-                <a href={`${base}/blog/${post.id}`} class="review-link">
+                <a href={`/blog/${post.id}`} class="review-link">
                 <article class="review-card">
                   {post.data.reviewImage && (
                     <Image width={240} height={60} src={post.data.reviewImage} alt="" />
@@ -93,7 +93,7 @@ const siteImage = new URL('../../assets/Logo-small.png', import.meta.url);
             </div>
           </div>
           <div class="revnew-cta-box">
-            <a class="cta-revnew" href={`${base}/review`}>Vezi toate review-urile</a>
+            <a class="cta-revnew" href={`/review`}>Vezi toate review-urile</a>
           </div>
         </div>
         <div class="revnew-container">
@@ -102,7 +102,7 @@ const siteImage = new URL('../../assets/Logo-small.png', import.meta.url);
             <div class="news-grid">
               {newsPosts.map(post => (
                 <article class="news-card">
-                  <a href={`${base}/blog/${post.id}`} class="news-link">
+                  <a href={`/blog/${post.id}`} class="news-link">
                     {post.data.heroImage && (
                       <Image width={480} height={120} src={post.data.heroImage} alt="" />
                     )}
@@ -110,10 +110,10 @@ const siteImage = new URL('../../assets/Logo-small.png', import.meta.url);
                   <div class="tag-title">
                     <div class="tag-container">
                       {post.data.tags?.map(tag => (
-                        <a href={`${base}/tags/${tag.toLowerCase()}`} class="tag">{tag}</a>
+                        <a href={`/tags/${tag.toLowerCase()}`} class="tag">{tag}</a>
                       ))}
                     </div>
-                    <a href={`${base}/blog/${post.id}`} class="news-link">
+                    <a href={`/blog/${post.id}`} class="news-link">
                       <h3>{post.data.title}</h3>
                     </a>
                   </div>
@@ -122,7 +122,7 @@ const siteImage = new URL('../../assets/Logo-small.png', import.meta.url);
             </div>
           </div>
           <div class="revnew-cta-box">
-            <a class="cta-revnew" href={`${base}/tags/stire`}>Vezi toate stirile</a>
+            <a class="cta-revnew" href={`/tags/stire`}>Vezi toate stirile</a>
           </div>
         </div>
       </section>
@@ -130,14 +130,14 @@ const siteImage = new URL('../../assets/Logo-small.png', import.meta.url);
       <section class="editors-pick">
         <h2><em>Editor’s pick</em></h2>
         <div class="pick-grid">
-          <a href={`${base}/gallery/r7.jpg`} class="pick-card">
-            <img src={`${base}/gallery/r7.jpg`} alt="Editor’s pick 1" class="pick-img" />
+          <a href={`/gallery/r7.jpg`} class="pick-card">
+            <img src={`/gallery/r7.jpg`} alt="Editor’s pick 1" class="pick-img" />
           </a>
-          <a href={`${base}/gallery/Logo.png`} class="pick-card">
-            <img src={`${base}/gallery/Logo.png`} alt="Editor’s pick 2" class="pick-img" />
+          <a href={`/gallery/Logo.png`} class="pick-card">
+            <img src={`/gallery/Logo.png`} alt="Editor’s pick 2" class="pick-img" />
           </a>
-          <a href={`${base}/gallery/VoicuAndrei.JPG`} class="pick-card">
-            <img src={`${base}/gallery/VoicuAndrei.JPG`} alt="Editor’s pick 3" class="pick-img" />
+          <a href={`/gallery/VoicuAndrei.JPG`} class="pick-card">
+            <img src={`/gallery/VoicuAndrei.JPG`} alt="Editor’s pick 3" class="pick-img" />
           </a>
         </div>
       </section>
