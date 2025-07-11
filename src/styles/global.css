@@ -192,7 +192,7 @@ hr {
 .post-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -246,6 +246,12 @@ hr {
 	box-sizing: border-box;
 	border-radius: 10px;
 	background-color: var(--card-darker);
+	transition: box-shadow 0.2s ease-in-out , transform 0.2s ease-in-out;
+}
+
+.latest-articles-box a:hover{
+	box-shadow: var(--box-shadow);
+	transform: translate(0, -8px) scale(1.02);
 }
 
 .latest-articles-box h5 {
@@ -542,11 +548,6 @@ ul li:last-child{
 	background: var(--card-darker);
 	padding: 10px;
 	border-radius: 10px;
-}
-
-.post-grid li:hover img{
-	box-shadow: var(--box-shadow);
-	transition: box-shadow 0.2s ease-in-out;
 }
 
 .post-grid li:hover h5{
