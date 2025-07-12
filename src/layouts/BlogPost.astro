@@ -57,12 +57,14 @@ console.log(heroImage?.src);
 			}
 			.last-updated-on {
 				font-style: italic;
+				margin: 0.5em 0 1.5rem 0;
 			}
 			.tag-container {
 				display: flex;
 				flex-wrap: wrap;
 				gap: 0.5em;
 				justify-content: center;
+				margin: 1rem 0 3rem 0;
 			}
 			.tag{
 				font-size: 1.25em;
@@ -96,12 +98,13 @@ console.log(heroImage?.src);
 							}
 						</div>
 						<h3>{title}</h3>
-						<hr />
+						
 							<div class="tag-container">
 								{tags?.map(tag => (
 								<a href={`/tags/${tag.toLowerCase()}`} class="tag">{tag}</a>
 								))}
 							</div>
+						<hr />
 					</div>
 					<slot />
 				</div>
