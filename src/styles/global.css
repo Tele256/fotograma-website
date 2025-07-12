@@ -564,3 +564,13 @@ ul li:last-child{
 		font-size: 0.8rem;
 	}
 }
+
+/* Change background color of the banner */
+.cc__container {
+  background-color: var(--background) !important;
+}
+
+.cc__btn {
+  background-color: var(--accent) !important;
+  color: white !important;
+}
