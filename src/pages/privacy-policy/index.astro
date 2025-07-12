@@ -1,0 +1,25 @@
+---
+import MyPost from './privacypolicy.md';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import '../../styles/global.css';
+---
+
+<head>
+    <meta charset="utf-8" />
+</head>
+<Header />
+<article>
+  <MyPost />
+</article>
+<Footer />
+
+<style>
+    article {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2em;
+        line-height: 1.6;
+        font-size: 1.1rem;
+    }
+</style>
