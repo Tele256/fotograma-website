@@ -33,14 +33,14 @@ Canon EOS R50, fiind conceput pentru fotografi la început de drum, vine împach
 Ca tot vorbeam despre fotografie de sport mai devreme, ar fi momentul oportun să analizăm performanța în autofocus a acestei camere. Canon EOS R50 dispune de același sistem de focalizare automată prezent în frații săi mai mari, de la R10 până la R1: Canon Dual Pixel Autofocus II (DPAF II). Totuși, după cum am văzut în întreaga serie de camere, performanțele acestui sistem tind să varieze de la camera la camera, cele dedicate utilizatorilor profesioniști oferind performanțe superioare. Deci simplul fapt ca R50 are același sistem de focalizare automată ca și R3 (care este una dintre cele mai performante camere ale lui Canon) nu înseamnă ca va urmării subiecții la fel de bine.
 
 <video autoplay muted loop playsinline>
-  <source src="../../src/assets/review-canon-r50/0001.webm" type="video/webm" />
+  <source src="../../assets/review-canon-r50/0001.webm" type="video/webm" />
 </video>
 <p class="caption">Sistemul de autofocus al Canon EOS R50 urmarind o pasare, fara sa o piarda nici macar o data. S-a folosit un obiectiv EF 70-200 F4L IS USM.</p>
 
 Am rămas plăcut surprins când am testat această cameră întrucât sistemul de autofocus s-a dovedit (încă odată) robust, capabil ca urmărească subiecți în mod fiabil. In GIF-ul de mai sus putem observa ca R50-ul nu se chinuie sa urmareasca un subiect aflat in miscare. Din pacate nu am putut prinde acel porumbel cand zbura asa ca am simulat miscarea sa pe cadru in mod artificial.
 
 <video autoplay muted loop playsinline>
-  <source src="../../src/assets/review-canon-r50/0002.webm" type="video/webm" />
+  <source src="../../assets/review-canon-r50/0002.webm" type="video/webm" />
 </video>
 <p class="caption">Canon EOS R50 focalizand aproape si departe, cu usurinta, fara urmarirea subiectului. S-a folosit un obiectiv EF 70-200 F4L IS USM.</p>
 
@@ -70,10 +70,10 @@ Culorile oferite de camera in pozele JPEG sunt tipice Canon: Nuanțe vibrante de
 Canon EOS R50 poate filma in două rezoluții: 4K (3840x2160) și FHD (1920x1080). Pentru rezoluția 4K, camera poate înregistra 30, 25 sau 24 de cadre pe secundă, iar pentru FHD, aceasta poate înregistra 120, 100, 60, 50, 30, 25 sau 24 de cadre pe secundă. Este păcat ca nu poate filma 4K la 60 de cadre pe secundă, dar asta este probabil din cauza read-out speed-ului mic (35ms). Tot din cauza acestui aspect avem efecte de distorsiune cand imaginea este in miscare, ca in exemplul de mai jos. 
 
 <video autoplay muted loop playsinline>
-  <source src="../../src/assets/review-canon-r50/0003.webm" type="video/webm" />
+  <source src="../../assets/review-canon-r50/0003.webm" type="video/webm" />
 </video>
 
-<p class="caption">>Test de rolling shutter pe Canon EOS R50. In timpul filmarii 4K se pot observa distorsiuni majore ale liniilor verticale aflate in miscare.</p>
+<p class="caption">Test de rolling shutter pe Canon EOS R50. In timpul filmarii 4K se pot observa distorsiuni majore ale liniilor verticale aflate in miscare.</p>
 
 In timpul filmarii 4K, efectul de rolling shutter este vizibil prezent in imagine, ceea ce nu este un lucru foarte bun daca planuiti sa filmati scene de actiune sau cu miscari rapide sau bruste. Totusi, in modul Full HD, distorsiunile sunt cu mult reduse, fiind aproape invizibile. 
 
