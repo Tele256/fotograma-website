@@ -4,10 +4,10 @@ description: 'In acest articol vom explora impreuna punctele forte si cele slabe
 pubDate: 'Jun 26, 2025'
 updatedDate: 'Jul 16 2025'
 author: 'Voicu Andrei'
-heroImage: '../../assets/r7-review.png'
+heroImage: '/public/assets/r7-review.png'
 tags: ["review", "canon"]
 reviewTitle: 'Canon EOS R50'
-reviewImage: '../../assets/r7.png'
+reviewImage: '/public/assets/r7.png'
 ---
 
 Canon EOS R50 este o camera foto mirrorless entry-level, adica pentru incepatori. Au trecut cam 2 ani de cand Canon a lansat-o pe 18 aprilie 2023, insa asta nu ne impiedica sa scriem despre ea acum. Spoiler alert: o recomand cu caldura, veti vedea in curand de ce.
@@ -33,14 +33,14 @@ Canon EOS R50, fiind conceput pentru fotografi la început de drum, vine împach
 Ca tot vorbeam despre fotografie de sport mai devreme, ar fi momentul oportun să analizăm performanța în autofocus a acestei camere. Canon EOS R50 dispune de același sistem de focalizare automată prezent în frații săi mai mari, de la R10 până la R1: Canon Dual Pixel Autofocus II (DPAF II). Totuși, după cum am văzut în întreaga serie de camere, performanțele acestui sistem tind să varieze de la camera la camera, cele dedicate utilizatorilor profesioniști oferind performanțe superioare. Deci simplul fapt ca R50 are același sistem de focalizare automată ca și R3 (care este una dintre cele mai performante camere ale lui Canon) nu înseamnă ca va urmării subiecții la fel de bine.
 
 <video autoplay muted loop playsinline>
-  <source src="../../assets/review-canon-r50/0001.webm" type="video/webm" />
+  <source src="/public/assets/review-canon-r50/0001.webm" type="video/webm" />
 </video>
 <p class="caption">Sistemul de autofocus al Canon EOS R50 urmarind o pasare, fara sa o piarda nici macar o data. S-a folosit un obiectiv EF 70-200 F4L IS USM.</p>
 
 Am rămas plăcut surprins când am testat această cameră întrucât sistemul de autofocus s-a dovedit (încă odată) robust, capabil ca urmărească subiecți în mod fiabil. In GIF-ul de mai sus putem observa ca R50-ul nu se chinuie sa urmareasca un subiect aflat in miscare. Din pacate nu am putut prinde acel porumbel cand zbura asa ca am simulat miscarea sa pe cadru in mod artificial.
 
 <video autoplay muted loop playsinline>
-  <source src="../../assets/review-canon-r50/0002.webm" type="video/webm" />
+  <source src="/public/assets/review-canon-r50/0002.webm" type="video/webm" />
 </video>
 <p class="caption">Canon EOS R50 focalizand aproape si departe, cu usurinta, fara urmarirea subiectului. S-a folosit un obiectiv EF 70-200 F4L IS USM.</p>
 
@@ -48,7 +48,7 @@ Camera observa cu usurinta schimbarile de distanta si focalizeaza corespunzator,
 
 ### Performanța foto
 
-![Poza facuta de Canon EOS R50 cu un obiectiv EF 70-200 F4L IS USM cu setarile: ISO 100, F4, 1/1000. Poza direct din aparat fara edit aplicat.](../../assets/review-canon-r50/IMG_5017-min.jpg)
+![Poza facuta de Canon EOS R50 cu un obiectiv EF 70-200 F4L IS USM cu setarile: ISO 100, F4, 1/1000. Poza direct din aparat fara edit aplicat.](/public/assets/review-canon-r50/IMG_5017-min.jpg)
 
 <p class="caption">Poza facuta de Canon EOS R50 cu un obiectiv EF 70-200 F4L IS USM cu setarile: ISO 100, F4, 1/1000. Poza direct din aparat fara edit aplicat.</p>
 
@@ -60,7 +60,7 @@ Când vine vorba de obturator, Canon EOS R50 ne pune la dispoziție doar două o
 
 Această cameră poate face până la 12 cadre pe secundă in rafala cu obturatorul electronic parțial și 15 poze pe secundă cu obturatorul complet electronic. Buffer-ul (memoria interna folosita pentru pozatul in rafala) de care dispune R50 este redus, mai mic chiar decat al R10-lui. Camera poate face aproximativ 28 de poze la viteza de 12 cadre pe secunda. Asta inseamna aproximativ 2 secunde de fotografiere continua, dupa care aparatul incetineste pentru a elibera memoria buffer in cardul SD. Read-out speed-ul (viteza cu care senzorul de imagine scanează fiecare rând de pixeli de sus până jos) de 35 milisecunde cauzează distorsionări majore ale obiectelor aflate în mișcare atunci când se folosește obturatorul complet electronic. Un exemplu poate fi văzut în poza de dedesubt. Daca folosim obturatorul electronic partial nu se intampla asta.
 
-![Test de rolling shutter pe Canon EOS R50. In timpul fotografierii cu obturatorul complet electronic se pot observa distorsionari ale obiectelor care se deplaseaza la viteza mare de-a lungul cadrului. Obiectul care ar fi trebuit sa fie complet circular, apare oval.](../../assets/review-canon-r50/IMG_5110-min.jpg)
+![Test de rolling shutter pe Canon EOS R50. In timpul fotografierii cu obturatorul complet electronic se pot observa distorsionari ale obiectelor care se deplaseaza la viteza mare de-a lungul cadrului. Obiectul care ar fi trebuit sa fie complet circular, apare oval.](/public/assets/review-canon-r50/IMG_5110-min.jpg)
 <p class="caption">Test de rolling shutter pe Canon EOS R50. In timpul fotografierii cu obturatorul complet electronic se pot observa distorsionari ale obiectelor care se deplaseaza la viteza mare de-a lungul cadrului. Obiectul care ar fi trebuit sa fie complet circular, apare oval.</p>
 
 Culorile oferite de camera in pozele JPEG sunt tipice Canon: Nuanțe vibrante de roșu și albastru, nuanța pielii este ușor roză iar verdele este mai puțin saturat. Nu este nimic mai mult de adăugat aici, cu această cameră veți avea aceleași culori pe care le obțineți cu orice altă cameră Canon din ultimii 20 de ani. Iar acesta este un lucru extraordinar.
@@ -70,7 +70,7 @@ Culorile oferite de camera in pozele JPEG sunt tipice Canon: Nuanțe vibrante de
 Canon EOS R50 poate filma in două rezoluții: 4K (3840x2160) și FHD (1920x1080). Pentru rezoluția 4K, camera poate înregistra 30, 25 sau 24 de cadre pe secundă, iar pentru FHD, aceasta poate înregistra 120, 100, 60, 50, 30, 25 sau 24 de cadre pe secundă. Este păcat ca nu poate filma 4K la 60 de cadre pe secundă, dar asta este probabil din cauza read-out speed-ului mic (35ms). Tot din cauza acestui aspect avem efecte de distorsiune cand imaginea este in miscare, ca in exemplul de mai jos. 
 
 <video autoplay muted loop playsinline>
-  <source src="../../assets/review-canon-r50/0003.webm" type="video/webm" />
+  <source src="/public/assets/review-canon-r50/0003.webm" type="video/webm" />
 </video>
 
 <p class="caption">Test de rolling shutter pe Canon EOS R50. In timpul filmarii 4K se pot observa distorsiuni majore ale liniilor verticale aflate in miscare.</p>
