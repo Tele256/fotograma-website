@@ -7,7 +7,7 @@ author: 'Voicu Andrei'
 heroImage: '/public/assets/r7-review.png'
 tags: ["review", "canon"]
 reviewTitle: 'Canon EOS R50'
-reviewImage: '/public/assets/r7.png'
+reviewImage: '/public/assets/r50.png'
 ---
 
 Canon EOS R50 este o camera foto mirrorless entry-level, adica pentru incepatori. Au trecut cam 2 ani de cand Canon a lansat-o pe 18 aprilie 2023, insa asta nu ne impiedica sa scriem despre ea acum. Spoiler alert: o recomand cu caldura, veti vedea in curand de ce.
@@ -79,6 +79,8 @@ In timpul filmarii 4K, efectul de rolling shutter este vizibil prezent in imagin
 
 Canon EOS R50 compenseaza pentru acest “defect” cu calitatea superioara a filmarii 4K. Aceasta camera foloseste intreg senzorul de imagine 6K si, prin procesul de downsampling (filmare la rezolutie mai mare dar rezultatul este la rezolutie mai mica), scade rezolutia la 4K. Ceea ce rezulta din acest proces este o filmare mult mai bogata in detalii fine, adica o imagine mai calitativa. Aceasta tehnica este folosita si de alte camere Canon precum R10 si R7 (cel din urma face downsample de la 7K!). Calitatea imaginii este superba, chiar si pentru un senzor crop. As putea spune ca intrece chiar si senzorul Full Frame din Canon EOS RP, deoarece acela nu foloseste procesul de downsampling, ci filmeaza la rezolutia nativa 4K, rezultand astfel o imagine mai putin detaliata.
 
+Din pacate, R50-ul nu poate filma folosind profilul de imagine Canon Log, acesta fiind rezervat camerelor avansate precum R7, R6 etc. In loc de C-Log avem modul HDR PQ care ne permite sa filmam continut HDR. Filmarea facuta in acest mod este gata de vizualizare (pe ecrane HDR) imediat ce a fost salvata pe cardul SD, deci nu este nevoie de editare in post-productie.
+
 ### Construcție și ergonomie
 
 Canon EOS R50 este una din cele mai mici camere ale lui Canon. Are un grip mic, ușor de apucat cu intreaga mana. Dacă ai mâini mici, asta e camera perfectă pentru tine! Pentru utilizatori cu mâini mai mari, dacă grip-ul mic nu este un inconvenient atât de mare, butoanele mici si apropiate unele de celelalte sigur vor fi. Totuși, aceste alegeri de design făcute de Canon conduc spre o cameră cu greutate și dimensiuni reduse ce poate fi împachetată cu ușurință pentru următoarea vacanță sau care este foarte ușor de luat în oraș pentru o ședință foto cu prietenii. Dacă o folosiți împreună cu un obiectiv mic precum Canon RF 28mm F2.8 STM sau Canon RF 50mm F1.8 STM, acest combo devine perfect pentru fotografie stradală sau de vacanță. Materialele folosite in constructia camerei sunt calitative, aceasta nu se simte “ieftina” precum unele DSLR-uri canon destinate incepatorilor. 
@@ -104,3 +106,6 @@ Portul USB-C poate fi folosit si el pentru transferul rapid de poze pe calculato
 ### Concluzie
 
 Canon EOS R50 este camera ideala pentru incepatori si pentru persoane care isi doresc un aparat foto/video mic si usor de transportat. In ciuda pretului, acesta satisface prin calitatea imaginilor si prin dificultatea de utilizare extrem de redusa. Obiectivul va fi mereu mai important decat aparatul foto deoarece acela defineste calitatea imaginii in proportie de 70%, deci din acest punct de vedere R50 este perfect daca doriti sa investiti mai mult intr-un obiectiv calitativ decat pe aparatul foto in sine. La data scrierii acestui articol, R50 se invarte in jurul pretului de 3500 RON.
+
+[^1]: Oversampling de la x la y este procesul prin care o camera filmeaza folosind rezolutia intregului senzor de imagine, x, (cum ar fi 7K, 8K) dupa care il micsoreaza la rezolutia y. Din acest proces rezulta o filmare la rezolutia y mult mai detaliata si lipsita de zgomot decat daca ar fi fost filmata direct la acea rezolutie.
+[^2]: Un senzor APS-C (Advanced Photo System type-C), sau senzor crop, este un senzor de imagine de dimensiuni reduse fata de unul standard Full Frame. Senzorii crop ai lui Canon sunt cu 1.6x mai mici, pe cand restul brandurilor folosesc senzori cu 1.5x mai mici decat Full Frame.
