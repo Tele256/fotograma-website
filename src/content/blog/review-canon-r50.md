@@ -4,7 +4,7 @@ description: 'In acest articol vom explora impreuna punctele forte si cele slabe
 pubDate: 'Jun 26, 2025'
 updatedDate: 'Jul 16 2025'
 author: 'Voicu Andrei'
-heroImage: '/public/assets/r7-review.png'
+heroImage: '/public/assets/r50-review.png'
 tags: ["review", "canon"]
 reviewTitle: 'Canon EOS R50'
 reviewImage: '/public/assets/r50.png'
