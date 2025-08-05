@@ -10,7 +10,7 @@ reviewTitle: 'Canon EOS R50'
 reviewImage: '/public/assets/r50.png'
 ---
 
-Canon EOS R50 este o camera foto mirrorless entry-level, adica pentru incepatori. Au trecut cam 2 ani de cand Canon a lansat-o pe 18 aprilie 2023, insa asta nu ne impiedica sa scriem despre ea acum. Spoiler alert: o recomand cu caldura, veti vedea in curand de ce.
+Canon EOS R50 este o camera foto mirrorless entry-level, adica pentru incepatori. Au trecut cam 2 ani de cand Canon a lansat-o pe 18 aprilie 2023, insa asta nu ne impiedica sa scriem despre ea acum. Spoiler alert: o recomand cu caldura, veti vedea in curand de ce. 
 
 ### Specificațiile pe scurt
 
