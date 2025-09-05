@@ -1,7 +1,7 @@
 ---
 title: 'Canon EOS R50 - Review'
 description: 'In acest articol vom explora impreuna punctele forte si cele slabe ale camerei Canon EOS R50'
-pubDate: 'Jun 26, 2025'
+pubDate: 'Jun 29, 2025'
 updatedDate: 'Jul 16 2025'
 author: 'Voicu Andrei'
 heroImage: '/public/assets/r50-review.png'
