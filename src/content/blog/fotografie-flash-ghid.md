@@ -50,7 +50,7 @@ Astfel, chiar dacă avem blițul pe aparat putem să facem lumina să cadă din 
 
 Tot de astfel de suprafețe de reflexie ne putem folosi pentru a face umbrele mai fine. Practic, când luminăm un perete cu blițul, întregul perete (sau porțiunea luminată de bliț) devine o sursă gigantică de lumină, mult mai mare decât capul blițului nostru, și astfel umbrele care cad pe scena noastră devin mult mai fine, ceea ce dă un aspect plăcut fotografiei. Uită-te la imaginea de mai jos pentru a observa diferența dintre umbre fine și aspre.
 
-![Cateva din bliturile Canon care suporta sistemul wireless Canon RT](/assets/fotografie-flash-ghid/shadows.png)
+![Chiar daca scena din imagine este virtuala (Blender), marimea sursei de lumina are acelasi efect si in realitate](/assets/fotografie-flash-ghid/shadows.png)
 
 <p class="caption">Chiar daca scena din imagine este virtuala (Blender), marimea sursei de lumina are acelasi efect si in realitate.</p>
 
