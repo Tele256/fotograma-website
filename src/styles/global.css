@@ -341,15 +341,37 @@ hr {
 	.latest-articles-box li{
 	min-width: 120px;
 	}
+
+	.post-grid li {
+		flex: 1 1 100%;
+		min-width: auto;
+	}
+	
+
+
+	.latest-articles{
+		width: 100%;
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 	
 	.latest-articles-box a{
 		min-height: 10.3em;
+		border-radius: 0px;
 	}
 
 	.section-cta {
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
+		width: 80%;
+	}
+
+	.reviews-news{
+		max-width: 100% !important;
+		width: 100% !important;
 	}
 
 	.post-grid > *:only-child {
@@ -475,7 +497,6 @@ ul li:first-child .tag {
 .news-card img{
 	min-width: 70px;
 	max-width: 100px;
-	width: 10vw;
 	height: auto;
 	object-fit: cover;
 	border-radius: 5px;
