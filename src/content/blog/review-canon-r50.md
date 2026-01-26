@@ -5,6 +5,7 @@ pubDate: 'Jun 29, 2025'
 updatedDate: 'Jul 16 2025'
 author: 'Voicu Andrei'
 heroImage: '/public/assets/r50-review.png'
+heroImageCover: '/public/assets/review-canon-r50/cover.png'
 tags: ["review", "canon"]
 reviewTitle: 'Canon EOS R50'
 reviewImage: '/public/assets/r50.png'

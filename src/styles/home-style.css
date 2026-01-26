@@ -1,93 +1,427 @@
 
-
-.main1 {
-  padding: 20px 15px;
+:root {
+  --accent-color: #004225;
+  --background-color-light: #ffeacc;
+  --background-color-dark: #121212;
+  --text-color-light: #151515;
+  --text-color-dark: #e6e6e6;
+  --card-color: #fbedd7;
 }
 
-.latest-articles h2,
-.editors-pick h2 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-  font-style: italic;
+.dark {
+	--accent-color: #004225;
+  --background-color-light: #121212;
+  --background-color-dark: #121212;
+  --text-color-light: #e6e6e6;
+  --text-color-dark: #e6e6e6;
+  --card-color: #1e1e1e;
 }
 
-.article-grid {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 25px;
+/* TREBUIE SCHIMBATE PE FIECARE PAGINA */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--background-color-light);
 }
 
-.article {
-  background: #dddcd3;
-  padding: 10px;
+h3 {
+    color: var(--text-color-light);
+}
+
+.latest-articles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    color: var(--text-color-dark);
+}
+
+.featured-article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.featured-post{
+    padding: 0 !important;
+    padding-inline-start: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+}
+
+.featured-post li {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.featured-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px;
+  height: 360px;
   width: 100%;
-  flex: 1;
 }
 
-.meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.8rem;
-  margin-bottom: 5px;
+.image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.thumb {
-  background: #aaa;
-  height: 80px;
-  margin-bottom: 5px;
+/* Dark gradient for readability */
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
 }
 
-.article p {
+.overlay {
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+  right: 20px;
+  z-index: 2;
+  width: 95%;
+  text-align: left;;
+}
+
+.overlay h5 {
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.overlay .date {
+  margin: 4px 0 10px 0;
   font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.reviews-news {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 25px;
+/* Te-ar putea interesa */
+
+.related-header {
+    width: 95%;
+    max-width: 1200px;
+    margin-top: -20px;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-left: 20px;
 }
 
-.reviews,
-.news {
-  background: var(--card-darker);
-  padding: 10px;
-  border-radius: 10px;
+.related-header h2 {
+    font-weight: normal !important;
 }
 
-.reviews h3,
-.news h3 {
-  font-size: 1rem;
-  margin-bottom: 10px;
+.related-articles {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.reviews ul li,
-.news ul li {
-  background: #ccccbb;
-  height: 30px;
-  margin-bottom: 10px;
-  border-radius: 4px;
+.post-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
 }
 
-.editors-pick .pick-grid {
-  display: flex;
-  gap: 15px;
+.post-grid li {
+    list-style: none;
+    width: 95%;
+    height: 120px;
 }
 
-.pick-card {
-  background: #ddddcc;
-  flex: 1;
-  border-radius: 10px;
+.post-card {
+    background-color: var(--background-color-dark);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
-.hero-banner img{
-  width: 100%;
-  height: auto;
-  z-index: 900;
-}
+.post-card img {
+    width: 40%;
+    max-width: 200px;
+    height: 80%;
+    object-fit: cover;
+    margin: 0 10px;
+    border-radius: 4px;
+} 
 
-@media (max-width: 390px) {
-  .latest-articles h2,
-  .editors-pick h2 {
+.post-card h5 {
     font-size: 1rem;
-  }
+    margin: 10px 0 0 0;
+    font-weight: 600;
+}
+
+.post-card p {
+    font-size: 0.8rem;
+}
+
+/* Reviews */
+
+.reviews-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.reviews-header a{
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color: var(--text-color-dark);
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.reviews-header h3{
+    font-size: 1.3rem;
+}
+
+.review-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.review-link{
+    text-decoration: none;
+    width: 95%;
+    height: 100px;
+}
+
+.review-card{
+    background-color: var(--card-color);
+    border-radius: 8px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.review-card img {
+    width: 30%;
+    max-width: 150px;
+    height: 80%;
+    object-fit:contain;
+    margin: 10px 10px;
+    border-radius: 4px;
+}
+
+.review-card h3 {
+    font-size: 1rem;
+    margin: auto;
+    font-weight: 600;
+    color: var(--text-color-light)
+}
+
+.review-card .vl {
+    border-left: 2px solid var(--text-color-light);
+    height: 80%;
+    margin: auto 10px;
+}
+
+/* news */
+
+.news-header{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.news-header a{
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color: var(--text-color-dark);
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.news-header h3{
+    font-size: 1.3rem;
+}
+
+.news-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.news-card{
+    background-color: var(--card-color);
+    border-radius: 8px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 90%;
+    padding: 10px;
+}
+
+.news-link img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.tag-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.tag-container a{
+    text-decoration: none;
+    background-color: gray;
+    color: var(--text-color-dark) !important;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+}
+
+.tag-title a{
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-size: 1rem;
+}
+
+/* more articles */
+
+.more-articles-header {
+    width: 95%;
+    max-width: 1200px;
+    margin-top: 40px;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.articles-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px;
+}
+
+.articles-grid li {
+    list-style: none;
+    width: 100%;
+    height: 300px;
+}
+
+.articles-card {
+    background-color: var(--card-color);
+    border-radius: 8px;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.articles-card img {
+    width: 90%;
+    height: auto;
+    object-fit: fill;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    .post-grid {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .post-grid li {
+        width: 45%;
+        height: 150px;
+    }
+
+    .review-grid {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+
+    .review-grid a {
+        min-width: 25% !important;
+        max-width: 30% !important;
+    }
+
+    .news-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .news-card {
+        width: 45%;
+        min-height: 360px;
+    }
+
+    .articles-grid {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .articles-grid li {
+        width: 45%;
+        height: 350px;
+    }
 }

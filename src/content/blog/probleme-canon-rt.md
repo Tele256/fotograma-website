@@ -5,6 +5,7 @@ pubDate: 'Sep 1, 2025'
 updatedDate: 'Sep 1 2025'
 author: 'Voicu Andrei'
 heroImage: '/public/assets/canon-rt-thumbnail.png'
+heroImageCover: '/public/assets/probleme-canon-rf/cover.png'
 tags: ["echipament", "lumina", "canon"]
 ---
 

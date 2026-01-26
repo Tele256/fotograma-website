@@ -5,6 +5,7 @@ pubDate: 'Sept 15, 2025'
 updatedDate: 'Dec 8 2025'
 author: 'Voicu Andrei'
 heroImage: '/public/assets/c50-release.PNG'
+heroImageCover: '/public/assets/canon-c50-prezentare/cover.PNG'
 tags: ["canon", "stire", "video"]
 reviewTitle: '---'
 reviewImage: '/public/assets/r50.png'

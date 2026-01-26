@@ -1,0 +1,99 @@
+
+:root {
+    --header-height: 76px;
+    --accent: #004225;
+    --black: 0, 0, 0;
+}
+
+.site-header {
+    margin: 0 0 0 0;
+    padding: 0 1em;
+    background: var(--accent);
+    box-shadow: 0 2px 8px rgba(var(--black), 5%);
+    font-family: 'Times New Roman', Times, serif !important;
+    position: sticky;
+    top: 0;                  /* stick when it hits the top of the viewport */
+    z-index: 1000;           /* make sure it stays above content */
+}
+.site-header h2 {
+    margin: 0;
+    font-size: 1em;
+    color: beige
+}
+
+.site-header a{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.site-header h2 a,
+.site-header h2 a.active {
+    text-decoration: none;
+}
+.site-header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 76px;
+}
+.site-header nav a {
+    padding: 1em 0.5em;
+    color: var(--black);
+    text-decoration: none;
+    color: beige;
+    
+}
+.site-header nav a.active {
+    text-decoration: none;
+    border-bottom-color: var(--background);
+    text-shadow: 0 0 12px #ffe9ac80;
+}
+.social-links,
+.social-links a {
+    display: flex;
+    color: beige
+}
+.internal-links {
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.active {
+    text-decoration: none !important;
+}
+
+.logo-img {
+    height: 36px;
+    width: auto;
+    content: url('../assets/Logo.png');
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: beige;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+@media (max-width: 720px) {
+    .social-links {
+        display: none;
+    }
+
+    .logo-img{
+        content: url('../assets/Logo-small.png');
+    }
+}
+
+@media (min-width: 412px) {
+    .site-header a{
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}

@@ -1,5 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import readingTime from 'reading-time';
+
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -8,11 +10,16 @@ import { Image } from 'astro:assets';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage, author, tags, showFooter = true} = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, heroImageCover, author, tags, showFooter = true} = Astro.props;
 
 const base = import.meta.env.BASE_URL;
 
 console.log(heroImage?.src);
+
+const renderedSlot = Astro.slots.has('default') ? await Astro.slots.render('default') : { html: '' };
+const htmlContent = typeof renderedSlot === 'string' ? renderedSlot : renderedSlot.html;
+const stats = readingTime(htmlContent);
+const readMinutes = Math.ceil(stats.minutes);
 ---
 
 <html lang="en">
@@ -28,12 +35,6 @@ console.log(heroImage?.src);
 			}
 			.hero-image {
 				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
 			}
 			.prose {
 				width: 720px;
@@ -55,20 +56,6 @@ console.log(heroImage?.src);
 				margin-bottom: 0.5em;
 				color: rgb(var(--gray));
 			}
-			.last-updated-on {
-				font-style: italic;
-				margin: 0.5em 0 1.5rem 0;
-			}
-			.tag-container {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 0.5em;
-				justify-content: center;
-				margin: 1rem 0 3rem 0;
-			}
-			.tag{
-				font-size: 1.25em;
-			}
 
 		</style>
 	</head>
@@ -82,31 +69,40 @@ console.log(heroImage?.src);
 		<Header />
 		<main style="background-color: var(--background);">	
 			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
-				</div>
-				<div class="prose">
-					<div class="title">
+				<div class="image-wrapper">
+					<div class="hero-image">
+						{heroImageCover && <Image width={1020} height={510} src={heroImageCover} alt="" />}
+					</div>
+					<div class="overlay">
+						<div class="title">
+							
+							<h1>{title}</h1>
+						</div>
 						<div class="date">
-							<FormattedDate date={pubDate} />
+						<FormattedDate date={pubDate} />
 							{author && ` · de ${author}`}
 							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Actualizat ultima data pe <FormattedDate date={updatedDate} />
-									</div>
-								)
+								
 							}
 						</div>
-						<h1>{title}</h1>
-						
-							<div class="tag-container">
-								{tags?.map(tag => (
-								<a href={`/tags/${tag.toLowerCase()}`} class="tag">{tag}</a>
-								))}
-							</div>
-						<hr />
 					</div>
+				</div>
+				
+				<div class="prose">
+					<div class="update-tag">
+						<div class="tag-container">
+							{tags?.map(tag => (
+								<a href={`/tags/${tag.toLowerCase()}`} class="tag">{tag}</a>
+							))}
+						</div>
+						<div class="update-read">
+							<i><div class="update">
+								{updatedDate && <span class="last-updated-on">Ultima actualizare: <FormattedDate date={updatedDate} /></span>}
+							</div></i>
+							<div class="read-time"><i>{readMinutes} minute de citit</i></div>
+						</div>
+					</div>					
+					<hr />
 					<slot />
 				</div>
 			</article>

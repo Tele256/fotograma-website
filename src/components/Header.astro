@@ -1,5 +1,6 @@
 ---
 import HeaderLink from './HeaderLink.astro';
+import '../styles/header-style.css';
 import { SITE_TITLE } from '../consts';
 const base = import.meta.env.BASE_URL;
 ---
@@ -25,7 +26,7 @@ const base = import.meta.env.BASE_URL;
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b78e0d3c-c2a2-492c-9d50-de7cf0478d9d"></script>
 </head>
 
-<header>
+<header  class="site-header">
 	<nav>
 		<!--<h2><a href="/">{SITE_TITLE}</a></h2> -->
 		<a href={`/`} class="logo-link"><img alt="Fotograma.ro Logo" class="logo-img" /></a>
@@ -81,81 +82,5 @@ const base = import.meta.env.BASE_URL;
 	</script>
 </header>
 <style>
-	header {
-		margin: 0 0 0 0;
-		padding: 0 1em;
-		background: var(--fuji);
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-		position: sticky;
-  		top: 0;                  /* stick when it hits the top of the viewport */
-  		z-index: 1000;           /* make sure it stays above content */
-	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-		color: beige
-	}
-
-	a{
-		font-size: 1rem;
-		text-align: center;
-	}
-
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		min-height: 76px;
-	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		text-decoration: none;
-		color: beige;
-		
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--background);
-		text-shadow: 0 0 12px #ffe9ac80;
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
-		color: beige
-	}
-	.internal-links {
-		position: absolute;
-  		left: 50%;
-		translate: -50%;
-		width: 200px;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-	}
-
-	.theme-toggle {
-		background: none;
-		border: none;
-		color: beige;
-		font-size: 1.5em;
-		cursor: pointer;
-	}
-
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
-	}
-
-	@media (min-width: 412px) {
-		a{
-			font-size: 1.25rem;
-			text-align: center;
-		}
-	}
+	
 </style>

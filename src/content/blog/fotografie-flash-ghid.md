@@ -5,6 +5,7 @@ pubDate: 'Sep 3, 2025'
 updatedDate: 'Sep 3 2025'
 author: 'Voicu Andrei'
 heroImage: '/public/assets/fotografie-flash-ghid.png'
+heroImageCover: '/public/assets/fotografie-flash-ghid/cover.png'
 tags: ["ghid", "lumina"]
 ---
 

@@ -1,0 +1,77 @@
+:root {
+  --accent-color: #004225;
+  --background-color-light: #ffeacc;
+  --background-color-dark: #121212;
+  --text-color-light: #151515;
+  --text-color-dark: #e6e6e6;
+  --card-color: #fbedd7;
+}
+
+.dark {
+	--accent-color: #004225;
+  --background-color-light: #121212;
+  --background-color-dark: #121212;
+  --text-color-light: #e6e6e6;
+  --text-color-dark: #e6e6e6;
+  --card-color: #1e1e1e;
+}
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Libre Baskerville', serif;
+background-color: var(--background-color-light);
+color: var(--text-color-light);
+text-align: center;
+}
+
+a{
+color: var(--accent-color);
+text-decoration: underline;
+}
+
+.gallery-intro {
+max-width: 1000px;
+margin: 0 auto;
+padding: 2rem 1rem;
+}
+
+.masonry-gallery {
+column-count: 3;
+column-gap: 16px;
+max-width: 1000px;
+margin: 0 auto;
+padding: 1rem;
+}
+
+.image-item {
+display: inline-block;
+width: 100%;
+margin-bottom: 16px;
+break-inside: avoid;
+}
+
+.image-item img {
+width: 100%;
+height: auto;
+display: block;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+transition: transform 0.3s;
+}
+
+.image-item img:hover {
+transform: scale(1.03);
+}
+
+@media (max-width: 900px) {
+.masonry-gallery {
+    column-count: 2;
+}
+}
+
+@media (max-width: 300px) {
+.masonry-gallery {
+    column-count: 1;
+}
+}

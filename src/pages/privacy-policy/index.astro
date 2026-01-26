@@ -5,17 +5,45 @@ import Footer from '../../components/Footer.astro';
 import '../../styles/global.css';
 ---
 
+<!DOCTYPE html>
+<html lang="ro">
 <head>
     <meta charset="utf-8" />
 </head>
 <Header />
+<body>
 <article>
   <MyPost />
 </article>
 <Footer />
-
+</body>
 <style>
+    :root {
+        --accent-color: #004225;
+        --background-color-light: #ffeacc;
+        --background-color-dark: #121212;
+        --text-color-light: #151515;
+        --text-color-dark: #e6e6e6;
+        --card-color: #fbedd7;
+    }
+
+    .dark {
+        --accent-color: #004225;
+        --background-color-light: #121212;
+        --background-color-dark: #121212;
+        --text-color-light: #e6e6e6;
+        --text-color-dark: #e6e6e6;
+        --card-color: #1e1e1e;
+    }
+
+    body {
+        background-color: var(--background-color-light);
+        color: var(--text-color-light);
+        margin: 0;
+        padding: 0;
+    }
     article {
+        background-color: var(--background-color-light);
         max-width: 800px;
         margin: 0 auto;
         padding: 2em;

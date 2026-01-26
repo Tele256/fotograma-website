@@ -1,0 +1,137 @@
+:root {
+  --accent-color: #004225;
+  --accent-color-dark: #66bb6a;
+  --accent-color-light: #003312;
+  --background-color-light: #ffeacc;
+  --background-color-dark: #121212;
+  --text-color-light: #151515;
+  --text-color-dark: #e6e6e6;
+  --card-color: #fbedd7;
+}
+
+.dark {
+  --accent-color: #004225;
+  --accent-color-dark: #003312;
+  --accent-color-light: #66bb6a;
+  --background-color-light: #121212;
+  --background-color-dark: #121212;
+  --text-color-light: #e6e6e6;
+  --text-color-dark: #e6e6e6;
+  --card-color: #1e1e1e;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--background-color-light);
+    transition: 0.2s ease;
+}
+main section {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 0;
+    align-items: center;
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+    padding-inline-start: 0 !important;
+}
+ul li {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-color);
+    border-radius:6px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+}
+ul li * {
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+ul li img {
+    margin: 0 0 10px 0;
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+ul li a {
+    display: block;
+    width: 100%;
+}
+ul li .tag-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px 0 10px 0;
+}
+.tag-container .tag {
+    background-color: gray;
+    color: var(--text-color-dark);
+    border-radius: 2px;
+    padding: 2px 6px;
+}
+.title {
+    margin: 0 8px 10px 8px;
+    color: var(--text-color-light);
+    line-height: 1;
+    text-align: center;
+}
+.date {
+    margin: 0 0 20px 0;
+    color: var(--text-color-light);
+    font-size: 0.775em;
+    text-align: center;
+}
+h4:hover{
+    color: var(--accent-color-light) !important;
+}
+
+@media (min-width: 768px) {
+    ul {
+        padding: 1rem 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100% !important;
+    }
+
+    ul li {
+        width: 30% !important;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-section {
+        margin: 0 !important;
+    }
+
+    .title {
+        font-size: 1.1em;
+    }
+
+    .date {
+        font-size: 0.7em;
+    }
+    
+}

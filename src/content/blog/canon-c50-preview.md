@@ -5,6 +5,7 @@ pubDate: 'Sep 5, 2025'
 updatedDate: 'Sep 5 2025'
 author: 'Voicu Andrei'
 heroImage: '/public/assets/canon-c50-preview.png'
+heroImageCover: '/public/assets/canon-c50-preview/cover.png'
 tags: ["stire", "canon", "video"]
 ---
 
