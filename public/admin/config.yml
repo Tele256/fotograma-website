@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: tele256/photo-site
+  repo: tele256/fotograma-website
   branch: main
   base_url: https://tele256.github.io
-  auth_endpoint: /photo-site/admin/
+  auth_endpoint: /fotograma-website/admin/
 
 media_folder: "src/assets/"
 public_folder: "/src/assets/"
