@@ -1,5 +1,5 @@
 ---
-title: 'Focal plane indicator: Detaliul ascuns de pe camera ta"'
+title: 'Focal plane indicator: Detaliul ascuns de pe camera ta'
 description: 'In acest articol discutam despre importanta indicatorului planului focal.'
 pubDate: 'Jan 30, 2026'
 updatedDate: 'Jan 30 2026'
