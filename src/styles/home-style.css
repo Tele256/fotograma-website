@@ -165,8 +165,7 @@ h3 {
 }
 
 .post-card img {
-    width: 40%;
-    max-width: 200px;
+    width: auto;
     height: 80%;
     object-fit: cover;
     margin: 0 10px;
@@ -382,27 +381,6 @@ h3 {
 }
 
 @media (min-width: 768px) {
-    .post-grid {
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .post-grid li {
-        width: 45%;
-        height: 150px;
-    }
-
-    .review-grid {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0 20px;
-    }
-
-    .review-grid a {
-        min-width: 25% !important;
-        max-width: 30% !important;
-    }
 
     .news-grid {
         flex-direction: row;
@@ -423,5 +401,29 @@ h3 {
     .articles-grid li {
         width: 45%;
         height: 350px;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .post-grid {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .post-grid li {
+        width: 45%;
+        height: 150px;
+    }
+
+    .review-grid {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 0 40px;
+    }
+
+    .review-grid a {
+        width: 23% !important;
     }
 }

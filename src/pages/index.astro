@@ -24,7 +24,7 @@ const base = import.meta.env.BASE_URL;
 
 const reviewPosts = posts
   .filter(post => post.data.tags?.includes('review'))
-  .slice(0, 3);
+  .slice(0, 4);
 
 const newsPosts = posts
   .filter(post => (post.data.tags?.includes('stire') || post.data.tags?.includes('eveniment')) || (post.data.tags?.includes('stire') && post.data.tags?.includes('eveniment')))
